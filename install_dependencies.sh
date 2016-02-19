@@ -48,7 +48,7 @@ NOFO='\033[00m'
 OK="${GREEN}[+] ${NC}"
 FAIL="${RED}[-] ${NC}"
 
-HAS_ARPOISEN=0 # Default not installed, cant check for arpoinsen at the moment
+HAS_ARPOISON=0 # Default not installed, cant check for arpoinson at the moment
 HAS_MITMPROXY=1
 HAS_HOMEBREW=1
 HAS_NMAP=1
@@ -58,7 +58,7 @@ echo -e "${OK}Install mitm_arp_proxy dependencies"
 # Check if dependecies are installed
 checkarpoison
 if [ "$CHECK" == "FAILED" ]; then
-	HAS_ARPOISEN=0
+	HAS_ARPOISON=0
 fi
 echo -e "${STATE} -> arpoison"
 
@@ -89,7 +89,7 @@ if [ "$HAS_MITMPROXY" == 0 ]; then
 	installViaBrew mitmproxy
 fi
 
-if [ "$HAS_ARPOISEN" == 0 ]; then
+if [ "$HAS_ARPOISON" == 0 ]; then
 	installViaBrew arpoison
 fi
 
