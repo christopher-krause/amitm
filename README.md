@@ -1,8 +1,6 @@
-amitm
-=====
+# amitm
 
 Automated Man-In-The-Middle
----------------------------
 
 ### Run:
 
