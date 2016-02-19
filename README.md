@@ -1,6 +1,22 @@
-# amitm
-Automated arpoisen + mitmproxy script for local networks
+amitm
+=====
 
-You need homebrew, nmap, arpoisen and mitmproxy
+Automated Man-In-The-Middle
+---------------------------
 
-OSX only
+### Run:
+
+```bash
+git clone https://github.com/Chrikel/amitm.git
+cd amitm;
+./install_dependencies.sh
+sudo ./mitm_arp_script.sh -h
+```
+
+### Deps: 
+- Homebrew
+- nmap
+- arpoison
+- mitmproxy
+
+Currently OSX only
